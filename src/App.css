@@ -1,0 +1,79 @@
+/* normally would use CSS Modules (preferred) or BEM */
+
+.todo-app {
+  height: 100vh;
+  min-width: 400px;
+}
+
+.header {
+  color: #fff;
+  background-color: #1a212b;
+  padding: 20px;
+}
+
+.title {
+  margin: 0;
+}
+
+.contents {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
+
+.contents.loading {
+  margin-top: 150px;
+}
+
+.todos {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+  flex: 1 1 600px;
+  min-width: 400px;
+  max-width: 800px;
+}
+
+.todo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #eee;
+  padding: 10px;
+  margin: 0 20px;
+  height: 30px;
+}
+
+.todo:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.todo-select {
+  margin-right: 10px;
+}
+
+.todo-description {
+  display: flex;
+  align-items: center;
+}
+
+.todo-spinner {
+  margin-right: 10px;
+}
+
+.due-date {
+  border: 1px solid #1a212b;
+  padding: 5px;
+}
+
+.completed {
+  background-color: #81c784;
+}
+
+.overdue {
+  background-color: #ffcdd2;
+}
+
+.line-through {
+  text-decoration: line-through;
+}
